@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C15E3161F9F78BE003B34FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15E3151F9F78BD003B34FD /* AppDelegate.swift */; };
+		2C15E31B1F9F78BE003B34FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15E3191F9F78BE003B34FD /* Main.storyboard */; };
+		2C15E31D1F9F78BE003B34FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C15E31C1F9F78BE003B34FD /* Assets.xcassets */; };
+		2C15E3201F9F78BE003B34FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15E31E1F9F78BE003B34FD /* LaunchScreen.storyboard */; };
+		2C15E32B1F9F78BE003B34FD /* LRFContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15E32A1F9F78BE003B34FD /* LRFContactsTests.swift */; };
+		2C15E3361F9F78BE003B34FD /* LRFContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15E3351F9F78BE003B34FD /* LRFContactsUITests.swift */; };
+		2C15E3461F9F7A47003B34FD /* LRFTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15E3451F9F7A47003B34FD /* LRFTableViewController.swift */; };
+		2C98AD5C1F9F7DD900917E7D /* LRFInfoCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98AD5B1F9F7DD900917E7D /* LRFInfoCardViewController.swift */; };
+		2C98AD5E1F9F7E1800917E7D /* LRFPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98AD5D1F9F7E1800917E7D /* LRFPersonModel.swift */; };
+		2C98AD601F9F7F7A00917E7D /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C98AD5F1F9F7F7A00917E7D /* Contacts.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C15E3271F9F78BE003B34FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C15E30A1F9F78BD003B34FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C15E3111F9F78BD003B34FD;
+			remoteInfo = LRFContacts;
+		};
+		2C15E3321F9F78BE003B34FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C15E30A1F9F78BD003B34FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C15E3111F9F78BD003B34FD;
+			remoteInfo = LRFContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C15E3121F9F78BD003B34FD /* LRFContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRFContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15E3151F9F78BD003B34FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C15E31A1F9F78BE003B34FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C15E31C1F9F78BE003B34FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C15E31F1F9F78BE003B34FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C15E3211F9F78BE003B34FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C15E3261F9F78BE003B34FD /* LRFContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRFContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15E32A1F9F78BE003B34FD /* LRFContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFContactsTests.swift; sourceTree = "<group>"; };
+		2C15E32C1F9F78BE003B34FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C15E3311F9F78BE003B34FD /* LRFContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRFContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15E3351F9F78BE003B34FD /* LRFContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFContactsUITests.swift; sourceTree = "<group>"; };
+		2C15E3371F9F78BE003B34FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C15E3451F9F7A47003B34FD /* LRFTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFTableViewController.swift; sourceTree = "<group>"; };
+		2C98AD5B1F9F7DD900917E7D /* LRFInfoCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFInfoCardViewController.swift; sourceTree = "<group>"; };
+		2C98AD5D1F9F7E1800917E7D /* LRFPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFPersonModel.swift; sourceTree = "<group>"; };
+		2C98AD5F1F9F7F7A00917E7D /* Contacts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C15E30F1F9F78BD003B34FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E3231F9F78BE003B34FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E32E1F9F78BE003B34FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C15E3091F9F78BD003B34FD = {
+			isa = PBXGroup;
+			children = (
+				2C15E3141F9F78BD003B34FD /* LRFContacts */,
+				2C15E3291F9F78BE003B34FD /* LRFContactsTests */,
+				2C15E3341F9F78BE003B34FD /* LRFContactsUITests */,
+				2C15E3131F9F78BD003B34FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C15E3131F9F78BD003B34FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C15E3121F9F78BD003B34FD /* LRFContacts.app */,
+				2C15E3261F9F78BE003B34FD /* LRFContactsTests.xctest */,
+				2C15E3311F9F78BE003B34FD /* LRFContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C15E3141F9F78BD003B34FD /* LRFContacts */ = {
+			isa = PBXGroup;
+			children = (
+				2C15E3151F9F78BD003B34FD /* AppDelegate.swift */,
+				2C15E3451F9F7A47003B34FD /* LRFTableViewController.swift */,
+				2C98AD5B1F9F7DD900917E7D /* LRFInfoCardViewController.swift */,
+				2C98AD5F1F9F7F7A00917E7D /* Contacts.plist */,
+				2C98AD5D1F9F7E1800917E7D /* LRFPersonModel.swift */,
+				2C15E3191F9F78BE003B34FD /* Main.storyboard */,
+				2C15E31C1F9F78BE003B34FD /* Assets.xcassets */,
+				2C15E31E1F9F78BE003B34FD /* LaunchScreen.storyboard */,
+				2C15E3211F9F78BE003B34FD /* Info.plist */,
+			);
+			path = LRFContacts;
+			sourceTree = "<group>";
+		};
+		2C15E3291F9F78BE003B34FD /* LRFContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C15E32A1F9F78BE003B34FD /* LRFContactsTests.swift */,
+				2C15E32C1F9F78BE003B34FD /* Info.plist */,
+			);
+			path = LRFContactsTests;
+			sourceTree = "<group>";
+		};
+		2C15E3341F9F78BE003B34FD /* LRFContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C15E3351F9F78BE003B34FD /* LRFContactsUITests.swift */,
+				2C15E3371F9F78BE003B34FD /* Info.plist */,
+			);
+			path = LRFContactsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C15E3111F9F78BD003B34FD /* LRFContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15E33A1F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContacts" */;
+			buildPhases = (
+				2C15E30E1F9F78BD003B34FD /* Sources */,
+				2C15E30F1F9F78BD003B34FD /* Frameworks */,
+				2C15E3101F9F78BD003B34FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRFContacts;
+			productName = LRFContacts;
+			productReference = 2C15E3121F9F78BD003B34FD /* LRFContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C15E3251F9F78BE003B34FD /* LRFContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15E33D1F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContactsTests" */;
+			buildPhases = (
+				2C15E3221F9F78BE003B34FD /* Sources */,
+				2C15E3231F9F78BE003B34FD /* Frameworks */,
+				2C15E3241F9F78BE003B34FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C15E3281F9F78BE003B34FD /* PBXTargetDependency */,
+			);
+			name = LRFContactsTests;
+			productName = LRFContactsTests;
+			productReference = 2C15E3261F9F78BE003B34FD /* LRFContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C15E3301F9F78BE003B34FD /* LRFContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C15E3401F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContactsUITests" */;
+			buildPhases = (
+				2C15E32D1F9F78BE003B34FD /* Sources */,
+				2C15E32E1F9F78BE003B34FD /* Frameworks */,
+				2C15E32F1F9F78BE003B34FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C15E3331F9F78BE003B34FD /* PBXTargetDependency */,
+			);
+			name = LRFContactsUITests;
+			productName = LRFContactsUITests;
+			productReference = 2C15E3311F9F78BE003B34FD /* LRFContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C15E30A1F9F78BD003B34FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Luara;
+				TargetAttributes = {
+					2C15E3111F9F78BD003B34FD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					2C15E3251F9F78BE003B34FD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C15E3111F9F78BD003B34FD;
+					};
+					2C15E3301F9F78BE003B34FD = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C15E3111F9F78BD003B34FD;
+					};
+				};
+			};
+			buildConfigurationList = 2C15E30D1F9F78BD003B34FD /* Build configuration list for PBXProject "LRFContacts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C15E3091F9F78BD003B34FD;
+			productRefGroup = 2C15E3131F9F78BD003B34FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C15E3111F9F78BD003B34FD /* LRFContacts */,
+				2C15E3251F9F78BE003B34FD /* LRFContactsTests */,
+				2C15E3301F9F78BE003B34FD /* LRFContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C15E3101F9F78BD003B34FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15E3201F9F78BE003B34FD /* LaunchScreen.storyboard in Resources */,
+				2C15E31D1F9F78BE003B34FD /* Assets.xcassets in Resources */,
+				2C15E31B1F9F78BE003B34FD /* Main.storyboard in Resources */,
+				2C98AD601F9F7F7A00917E7D /* Contacts.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E3241F9F78BE003B34FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E32F1F9F78BE003B34FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C15E30E1F9F78BD003B34FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15E3161F9F78BE003B34FD /* AppDelegate.swift in Sources */,
+				2C15E3461F9F7A47003B34FD /* LRFTableViewController.swift in Sources */,
+				2C98AD5C1F9F7DD900917E7D /* LRFInfoCardViewController.swift in Sources */,
+				2C98AD5E1F9F7E1800917E7D /* LRFPersonModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E3221F9F78BE003B34FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15E32B1F9F78BE003B34FD /* LRFContactsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C15E32D1F9F78BE003B34FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C15E3361F9F78BE003B34FD /* LRFContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C15E3281F9F78BE003B34FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C15E3111F9F78BD003B34FD /* LRFContacts */;
+			targetProxy = 2C15E3271F9F78BE003B34FD /* PBXContainerItemProxy */;
+		};
+		2C15E3331F9F78BE003B34FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C15E3111F9F78BD003B34FD /* LRFContacts */;
+			targetProxy = 2C15E3321F9F78BE003B34FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C15E3191F9F78BE003B34FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C15E31A1F9F78BE003B34FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C15E31E1F9F78BE003B34FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C15E31F1F9F78BE003B34FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C15E3381F9F78BE003B34FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C15E3391F9F78BE003B34FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C15E33B1F9F78BE003B34FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C15E33C1F9F78BE003B34FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C15E33E1F9F78BE003B34FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRFContacts.app/LRFContacts";
+			};
+			name = Debug;
+		};
+		2C15E33F1F9F78BE003B34FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRFContacts.app/LRFContacts";
+			};
+			name = Release;
+		};
+		2C15E3411F9F78BE003B34FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LRFContacts;
+			};
+			name = Debug;
+		};
+		2C15E3421F9F78BE003B34FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LRFContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Luara.LRFContacts.LRFContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LRFContacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C15E30D1F9F78BD003B34FD /* Build configuration list for PBXProject "LRFContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15E3381F9F78BE003B34FD /* Debug */,
+				2C15E3391F9F78BE003B34FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15E33A1F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15E33B1F9F78BE003B34FD /* Debug */,
+				2C15E33C1F9F78BE003B34FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15E33D1F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15E33E1F9F78BE003B34FD /* Debug */,
+				2C15E33F1F9F78BE003B34FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C15E3401F9F78BE003B34FD /* Build configuration list for PBXNativeTarget "LRFContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C15E3411F9F78BE003B34FD /* Debug */,
+				2C15E3421F9F78BE003B34FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C15E30A1F9F78BD003B34FD /* Project object */;
+}
