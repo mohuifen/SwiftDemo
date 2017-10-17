@@ -14,6 +14,7 @@
 		2C3D6DBE1F949CB100F9A6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C3D6DBC1F949CB100F9A6D9 /* LaunchScreen.storyboard */; };
 		2C3D6DC91F949CB100F9A6D9 /* LRFTipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D6DC81F949CB100F9A6D9 /* LRFTipCalculatorTests.swift */; };
 		2C3D6DD41F949CB100F9A6D9 /* LRFTipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D6DD31F949CB100F9A6D9 /* LRFTipCalculatorUITests.swift */; };
+		2C41C7831F95FE9700E4CE31 /* LRFNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C41C7821F95FE9700E4CE31 /* LRFNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2C3D6DCF1F949CB100F9A6D9 /* LRFTipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRFTipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3D6DD31F949CB100F9A6D9 /* LRFTipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFTipCalculatorUITests.swift; sourceTree = "<group>"; };
 		2C3D6DD51F949CB100F9A6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C41C7821F95FE9700E4CE31 /* LRFNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFNavigationBar.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				2C3D6DB31F949CB100F9A6D9 /* AppDelegate.swift */,
 				2C3D6DB51F949CB100F9A6D9 /* ViewController.swift */,
+				2C41C7821F95FE9700E4CE31 /* LRFNavigationBar.swift */,
 				2C3D6DB71F949CB100F9A6D9 /* Main.storyboard */,
 				2C3D6DBA1F949CB100F9A6D9 /* Assets.xcassets */,
 				2C3D6DBC1F949CB100F9A6D9 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				2C3D6DB61F949CB100F9A6D9 /* ViewController.swift in Sources */,
 				2C3D6DB41F949CB100F9A6D9 /* AppDelegate.swift in Sources */,
+				2C41C7831F95FE9700E4CE31 /* LRFNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

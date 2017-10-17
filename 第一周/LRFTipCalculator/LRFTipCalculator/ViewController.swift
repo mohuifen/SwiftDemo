@@ -24,6 +24,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let navigationBar = LRFNavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 64));
+        let navigationItem = UINavigationItem(title: "Tip Calculator")
+        navigationBar.setItems([navigationItem], animated: true)
+        self.view.addSubview(navigationBar)
+        
         self.sliderValue = Double(String(format:"%.2f",self.slider.value))!
         NotificationCenter.default.addObserver(self, selector:#selector(self.textFiledEditChanged), name: Notification.Name.UITextFieldTextDidChange, object: nil)
     }

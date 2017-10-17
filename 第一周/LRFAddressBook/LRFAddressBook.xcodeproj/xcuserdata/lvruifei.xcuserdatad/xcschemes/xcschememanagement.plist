@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LRFTipCalculator.xcscheme</key>
+		<key>LRFAddressBook.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C3D6DAF1F949CB100F9A6D9</key>
+		<key>2C41C74E1F95E06F00E4CE31</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C3D6DC31F949CB100F9A6D9</key>
+		<key>2C41C7621F95E06F00E4CE31</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C3D6DCE1F949CB100F9A6D9</key>
+		<key>2C41C76D1F95E07000E4CE31</key>
 		<dict>
 			<key>primary</key>
 			<true/>

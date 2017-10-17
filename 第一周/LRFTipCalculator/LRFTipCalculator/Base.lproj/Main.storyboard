@@ -14,13 +14,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LRFTipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-yS-ddn">
-                                <rect key="frame" x="30" y="90" width="315" height="45"/>
+                                <rect key="frame" x="30" y="220" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2Yf-oU-fGx"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hg-HF-DXw">
-                                <rect key="frame" x="30" y="167" width="315" height="20.5"/>
+                                <rect key="frame" x="30" y="335" width="315" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip(15%)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jce-Lj-0X4">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="20.5"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KW5-n0-Wv6">
-                                <rect key="frame" x="30" y="207.5" width="315" height="40"/>
+                                <rect key="frame" x="30" y="375.5" width="315" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLS-7D-087">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
@@ -91,7 +91,7 @@
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="asa-Q8-mNS">
-                                <rect key="frame" x="28" y="297.5" width="319" height="31"/>
+                                <rect key="frame" x="28" y="465.5" width="319" height="31"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u8D-SO-69q"/>
                                 </connections>
@@ -104,13 +104,13 @@
                             <constraint firstItem="asa-Q8-mNS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="HW5-I2-6UY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Hg-HF-DXw" secondAttribute="trailing" constant="30" id="Orc-gz-lA5"/>
                             <constraint firstItem="3Hg-HF-DXw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PMk-Ip-kLG"/>
-                            <constraint firstItem="LW2-yS-ddn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="a3K-m5-m5E"/>
+                            <constraint firstItem="LW2-yS-ddn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="a3K-m5-m5E"/>
                             <constraint firstItem="asa-Q8-mNS" firstAttribute="top" secondItem="KW5-n0-Wv6" secondAttribute="bottom" constant="50" id="eze-te-IZd"/>
                             <constraint firstItem="LW2-yS-ddn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="jCq-qC-HZf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LW2-yS-ddn" secondAttribute="trailing" constant="30" id="jcn-yV-OXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LW2-yS-ddn" secondAttribute="trailing" constant="70" id="jcn-yV-OXn"/>
                             <constraint firstItem="KW5-n0-Wv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rbT-de-ta8"/>
                             <constraint firstItem="KW5-n0-Wv6" firstAttribute="top" secondItem="3Hg-HF-DXw" secondAttribute="bottom" constant="20" id="wRt-Yl-TLw"/>
-                            <constraint firstItem="3Hg-HF-DXw" firstAttribute="top" secondItem="LW2-yS-ddn" secondAttribute="bottom" constant="32" id="xer-sw-fQx"/>
+                            <constraint firstItem="3Hg-HF-DXw" firstAttribute="top" secondItem="LW2-yS-ddn" secondAttribute="bottom" constant="70" id="xer-sw-fQx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
