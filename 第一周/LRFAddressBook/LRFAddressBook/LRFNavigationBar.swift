@@ -2,7 +2,7 @@
 //  LRFNavigationBar.swift
 //  LRFAddressBook
 //
-//  Created by 吕瑞斐 on 2017/10/17.
+//  Created by Luara on 2017/10/17.
 //  Copyright © 2017年 Beijing.iOS.LRFAddressBook. All rights reserved.
 //
 
