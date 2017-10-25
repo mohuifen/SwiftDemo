@@ -6,11 +6,32 @@
 //  Copyright © 2017年 Luara. All rights reserved.
 //
 
+
 import UIKit
+
+class LRFTableViewCell: UITableViewCell {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+//        fatalError("init(coder:) has not been implemented")
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.imageView?.frame = CGRect(x: 20, y: 0, width: 45, height: 45)
+        self.imageView?.center.y = self.frame.height/2
+        self.imageView?.layer.cornerRadius = (self.imageView?.frame.width)!/2
+        self.imageView?.layer.masksToBounds = true
+    }
+}
 
 class LRFTableViewController: UITableViewController {
 
     var dataDic:NSDictionary? = [:]
+    // 尝试懒加载，封装model 失败
         //= {
 //        let path : NSString = Bundle.main.path(forResource: "Contacts", ofType: "plist")! as NSString
 //        let contentDic = NSDictionary(contentsOfFile: path as String)
@@ -29,7 +50,8 @@ class LRFTableViewController: UITableViewController {
         
     //}()
     var sectionArray:[Any] = []
-    let reuseIdentifier: NSString! = "UITableViewCell"
+    let reuseIdentifier: NSString! = "LRFTableViewCell"
+    var indexPath:NSIndexPath!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +70,7 @@ class LRFTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return dataDic!.count
+        return sectionArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,80 +78,57 @@ class LRFTableViewController: UITableViewController {
         let array:NSArray = dataDic?[sectionArray[section]] as! NSArray
         return array.count
     }
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionArray[section] as? String
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
     }
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view : UIView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        let label : UILabel = UILabel(frame: CGRect(x: 20, y: 0, width: 200, height: 40))
+        label.textColor = UIColor(red: 107/255, green: 71/255, blue: 48/255, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.text = (sectionArray[section] as? String)?.uppercased()
+        view.addSubview(label)
+        return view
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier as String, for: indexPath)
-//        if cell == nil {
-//            cell = UITableViewCell.init(style: UITableViewCellStyle.subtitle, reuseIdentifier: reuseIdentifier! as String)
-//        }
-//        if
         let array:NSArray = dataDic![sectionArray[indexPath.section]] as! NSArray
 
         let dic = array[indexPath.row] as! NSDictionary
+        
         cell.imageView?.image = UIImage(named: (dic["headPortraitStr"] as! String))
-        cell.imageView?.layer.cornerRadius = (cell.imageView?.frame.width)!/2
-        cell.imageView?.layer.masksToBounds = true
+        cell.imageView?.backgroundColor = UIColor.gray
         cell.textLabel?.text = dic["name"]! as? String
+        cell.textLabel?.textColor = UIColor(red: 86/255, green: 83/255, blue: 101/255, alpha: 1)
+        
         cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
 
         return cell
     }
-    
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.indexPath = indexPath as NSIndexPath
+        self.performSegue(withIdentifier: "info", sender: nil)
 
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "info" {
+            let array:NSArray = dataDic![sectionArray[indexPath.section]] as! NSArray
+            let dic = array[indexPath.row] as! NSDictionary
+            
+            let infoCard : LRFInfoCardViewController = segue.destination as! LRFInfoCardViewController
+            infoCard.dic = dic
+            
+        }
         
-        /*
-         let array:NSArray = dataDic![sectionArray[indexPath.section]] as! NSArray
         
-        let dic = array[indexPath.row] as! NSDictionary
-        let infoCard : LRFInfoCardViewController = segue.destination
-        infoCard.dic = dic
-         */
+       
     }
     
 
