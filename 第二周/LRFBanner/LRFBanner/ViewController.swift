@@ -31,9 +31,8 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
 
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var dataArray : Array! = { () -> Array<String>! in
-        let array:Array! = ["0","1","2","3","4"]
-        return array
+    var dataArray : [String] = {
+        return ["0","1","2","3","4"]
     }()
     
     override func viewDidLoad() {
