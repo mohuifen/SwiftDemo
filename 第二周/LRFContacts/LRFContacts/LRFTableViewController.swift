@@ -86,6 +86,7 @@ class LRFTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view : UIView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        view.backgroundColor = self.view.backgroundColor
         let label : UILabel = UILabel(frame: CGRect(x: 20, y: 0, width: 200, height: 40))
         label.textColor = UIColor(red: 107/255, green: 71/255, blue: 48/255, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 12)
