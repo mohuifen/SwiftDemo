@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" red="0.96470588235294119" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LRFTableViewCell" id="w4Z-i7-Ch9" customClass="LRFTableViewCell" customModule="LRFContacts" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
