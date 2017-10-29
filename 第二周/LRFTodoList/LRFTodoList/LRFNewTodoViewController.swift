@@ -2,7 +2,7 @@
 //  LRFNewTodoViewController.swift
 //  LRFTodoList
 //
-//  Created by 吕瑞斐 on 2017/10/27.
+//  Created by Laura on 2017/10/27.
 //  Copyright © 2017年 Beijing.iOS.LRFTodoList. All rights reserved.
 //
 
