@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4AEAFF1FA57E4400C2FAA9 /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C4AEAFE1FA57E4300C2FAA9 /* Contacts.plist */; };
 		2C8FB5DF1FA4AD3E005F1E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8FB5DE1FA4AD3E005F1E97 /* AppDelegate.swift */; };
 		2C8FB5E41FA4AD3E005F1E97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8FB5E21FA4AD3E005F1E97 /* Main.storyboard */; };
 		2C8FB5E61FA4AD3E005F1E97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8FB5E51FA4AD3E005F1E97 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C4AEAFE1FA57E4300C2FAA9 /* Contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
 		2C8FB5DB1FA4AD3E005F1E97 /* LRFSwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRFSwipeableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8FB5DE1FA4AD3E005F1E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8FB5E31FA4AD3E005F1E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +49,6 @@
 		2C8FB5FE1FA4AD3F005F1E97 /* LRFSwipeableCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFSwipeableCellUITests.swift; sourceTree = "<group>"; };
 		2C8FB6001FA4AD3F005F1E97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8FB60C1FA4AD89005F1E97 /* LRFTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRFTableViewController.swift; sourceTree = "<group>"; };
-		2C8FB60E1FA4B295005F1E97 /* Contacts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +102,7 @@
 				2C8FB5DE1FA4AD3E005F1E97 /* AppDelegate.swift */,
 				2C8FB60C1FA4AD89005F1E97 /* LRFTableViewController.swift */,
 				2C8FB5E21FA4AD3E005F1E97 /* Main.storyboard */,
-				2C8FB60E1FA4B295005F1E97 /* Contacts.plist */,
+				2C4AEAFE1FA57E4300C2FAA9 /* Contacts.plist */,
 				2C8FB5E51FA4AD3E005F1E97 /* Assets.xcassets */,
 				2C8FB5E71FA4AD3E005F1E97 /* LaunchScreen.storyboard */,
 				2C8FB5EA1FA4AD3E005F1E97 /* Info.plist */,
@@ -237,6 +238,7 @@
 				2C8FB5E91FA4AD3E005F1E97 /* LaunchScreen.storyboard in Resources */,
 				2C8FB5E61FA4AD3E005F1E97 /* Assets.xcassets in Resources */,
 				2C8FB5E41FA4AD3E005F1E97 /* Main.storyboard in Resources */,
+				2C4AEAFF1FA57E4400C2FAA9 /* Contacts.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

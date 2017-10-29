@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,17 +12,40 @@
         <scene sceneID="V0h-U1-cKe">
             <objects>
                 <tableViewController id="xgf-xb-b8z" customClass="LRFTableViewController" customModule="LRFSwipeableCell" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="egr-Xm-ot7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="egr-Xm-ot7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="MMp-BT-oWb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MMp-BT-oWb" id="Rx7-ih-mVd">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5HP-fJ-0Bf">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="FDu-YX-Hfz"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ap-Sl-K7P">
+                                            <rect key="frame" x="165" y="0.0" width="195" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="5HP-fJ-0Bf" secondAttribute="bottom" id="F9s-Ho-rpE"/>
+                                        <constraint firstItem="2Ap-Sl-K7P" firstAttribute="top" secondItem="Rx7-ih-mVd" secondAttribute="top" id="FTs-Pb-5kX"/>
+                                        <constraint firstItem="5HP-fJ-0Bf" firstAttribute="top" secondItem="Rx7-ih-mVd" secondAttribute="top" id="SdP-8l-Hhh"/>
+                                        <constraint firstAttribute="trailing" secondItem="2Ap-Sl-K7P" secondAttribute="trailing" constant="15" id="gQv-sJ-Ocm"/>
+                                        <constraint firstItem="5HP-fJ-0Bf" firstAttribute="leading" secondItem="Rx7-ih-mVd" secondAttribute="leading" id="wdn-Wf-ybK"/>
+                                        <constraint firstItem="2Ap-Sl-K7P" firstAttribute="leading" secondItem="5HP-fJ-0Bf" secondAttribute="trailing" constant="15" id="yTi-td-n2G"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Ap-Sl-K7P" secondAttribute="bottom" id="zpW-Qm-r88"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -35,7 +58,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeR-LN-xkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="71"/>
+            <point key="canvasLocation" x="-111.2" y="70.614692653673174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DbX-8d-0VX">
