@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  LRFTimeAnimation
+//  LRFTheHeartBeat
 //
 //  Created by Larua on 2017/11/11.
 //  Copyright © 2017年 Laura. All rights reserved.

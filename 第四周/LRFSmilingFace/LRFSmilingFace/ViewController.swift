@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  LRFSmilingFace
 //
-//  Created by 吕瑞斐 on 2017/11/11.
+//  Created by Larua on 2017/11/11.
 //  Copyright © 2017年 Laura. All rights reserved.
 //
 
@@ -24,6 +24,13 @@ class ViewController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        // 不知道怎么设置弱引用的self
+        
+        
+        //usingSpringWithDamping 阻尼系数(弹性) 越小越弹
+        //initialSpringVelocity速率
+
         UIView.animate(withDuration: 0.8, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.2, options: UIViewAnimationOptions.init(rawValue: 1), animations: {
             
             self.left.center = CGPoint(x: self.view.frame.size.width - self.left.center.x, y: self.left.center.y+30)

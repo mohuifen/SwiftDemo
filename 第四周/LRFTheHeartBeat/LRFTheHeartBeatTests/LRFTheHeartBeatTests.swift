@@ -1,15 +1,15 @@
 //
-//  LRFSmilingFaceTests.swift
-//  LRFSmilingFaceTests
+//  LRFTheHeartBeatTests.swift
+//  LRFTheHeartBeatTests
 //
 //  Created by Larua on 2017/11/11.
 //  Copyright © 2017年 Laura. All rights reserved.
 //
 
 import XCTest
-@testable import LRFSmilingFace
+@testable import LRFTheHeartBeat
 
-class LRFSmilingFaceTests: XCTestCase {
+class LRFTheHeartBeatTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
